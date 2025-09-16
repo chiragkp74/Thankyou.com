@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Thank You</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Redirect after 7 seconds -->
-  <meta http-equiv="refresh" content="7;url=https://www.ipc.gov.in/PvPI/adr.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Safety Message</title>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      background: linear-gradient(to right, #fceabb, #f8b500);
       font-family: 'Baloo 2', cursive;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      flex-direction: column;
       text-align: center;
+      color: #222;
     }
 
     h1 {
-      color: #2e7d32;
-      font-size: 2em;
+      font-size: 2.5em;
       text-transform: uppercase;
-      opacity: 0;
-      animation: fadeIn 2s ease-in-out forwards;
+      margin: 20px;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+    .images {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .images img {
+      width: 120px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
   </style>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://www.ipc.gov.in/PvPI/adr.html";
+    }, 4000);
+  </script>
 </head>
 <body>
+  <h1>Your vigilance saves lives. Thank you for contributing to patient safety.</h1>
 
-  <h1>YOUR VIGILANCE SAVES LIVES. THANK YOU FOR CONTRIBUTING TO DRUG SAFETY.</h1>
-
+  <div class="images">
+    <img src="https://cdn-icons-png.flaticon.com/512/3534/3534069.png" alt="Doctor cartoon">
+    <img src="https://cdn-icons-png.flaticon.com/512/4221/4221419.png" alt="Happy medicine cartoon">
+    <img src="https://cdn-icons-png.flaticon.com/512/6194/6194029.png" alt="Clipboard cartoon">
+    <img src="https://cdn-icons-png.flaticon.com/512/4359/4359947.png" alt="Thank you cartoon">
+  </div>
 </body>
 </html>
-
